@@ -1,10 +1,11 @@
-ul a {
+ul  a{
     color: darkgoldenrod;
-    font-family: sans-serif;
+    font-family:sans-serif;
     display: inline-block;
-}
-
-nav {
+      
+      }
+    nav  {
+    
     background-color: #40596B;
     height: 100px;
     text-align: center;
@@ -12,36 +13,31 @@ nav {
 }
 
 #col {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+}
+.hero   {
+    background-color: lightblue;
+     
 }
 
-.hero {
-    background-color: lightblue;
-}
 
-h1 {
-    background-color: lightblue;
+h1  {
+    background-color:lightblue;
     height: 100px;
-    text-align: center
-}
-
-body {
+    text-align: center}
+body    {
     color: darkgoldenrod;
 }
-
-h2 {
-    text-align: center;
-    /* background-color: indianred; */
+h2  {text-align: center
+/* background-color: indianred; */
 }
 
-h6 {
-    text-align: center;
+h6  {text-align: center;
     color: white;
 }
-
-footer {
+footer  {
     text-align: center;
     background-color: #40596B;
     color: white;
