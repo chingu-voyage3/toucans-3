@@ -1,5 +1,53 @@
+
+html {
+    font-size: 62.5%; /* 10px browser default */
+}
+
+/**##Headings##*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family:'Signika', sans-serif;
+	font-weight: 300;
+
+	line-height: 1.2;
+	margin: 0 0 20px;
+}
+
+h1 {
+	font-size: 36px;
+	font-size: 3.6rem;
+}
+
+h2 {
+	font-size: 30px;
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 24px;
+	font-size: 2.4rem;
+}
+
+h4 {
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+p, p body {
+	font-size: 2rem;
+}
+
+strong{
+  //font-weight: 600;
+}
+
 header{
-    height:80px;
+    //height:80px;
+    line-height: 1.5;
     background-color:rgb(64, 89, 107);
 }
 
@@ -9,11 +57,12 @@ header{
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    font-size: 1.25rem;
+    font-size: 2rem;
 }
 .flex-container{
   //display:flex;
   justify-content:space-evenly;
+  padding:1rem;
 }
 
 .flex-container a{
@@ -43,11 +92,16 @@ body{
 .hero-left{
   //flex: 0 1;
   //justify-content: center;
+}
 
+.hero-left h1{
+  font-size: 7rem;
 }
 .hero-right{
 
   min-width: 300px;
-  flex: 0 1 auto;
+  flex: 0.15 1 auto;
   //justify-content: center;
+  height: 100%;
+  align-items: center;
 }
