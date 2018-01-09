@@ -1,0 +1,93 @@
+ul  a{
+    color: darkgoldenrod;
+    font-family:sans-serif;
+    display: inline-block;
+      
+      }
+    nav  {
+    
+    background-color: #40596B;
+    height: 100px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#col {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+}
+.hero   {
+    background-color: lightblue;
+     
+}
+
+
+h1  {
+    background-color:lightblue;
+    height: 100px;
+    text-align: center}
+body    {
+    color: darkgoldenrod;
+}
+h2  {text-align: center
+/* background-color: indianred; */
+}
+
+h6  {text-align: center;
+    color: white;
+}
+footer  {
+    text-align: center;
+    background-color: #40596B;
+    color: white;
+}
+
+
+/*
+* === HOW IT WORKS SECTION ===
+*/
+
+#how-to-use {
+    background-color: #92DCAB;
+    padding: 40px;
+}
+
+#how-to-use h2 {
+    color: #25372B;
+    font-size: 2rem;
+}
+
+#how-to-use img {
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 80%;
+}
+
+#how-to-use p {
+    color: #3F3F3F;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#how-to-use .block-group {
+    /* align-items: center; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#how-to-use .content-block {
+    background-color: #41596A;
+    border-radius: 5px 5px 0px 0px;
+    display: block;
+    margin: 15px;
+    min-width: 300px;
+    width: 30%;
+}
+
+#how-to-use .block-text {
+    background-color: #FFF;
+    padding: 10px;
+}
