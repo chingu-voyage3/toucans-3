@@ -20,6 +20,7 @@ Say what the step will be
 
 Give the example
 And repeat
+And so on
 
 until finished
 End with an example of getting some data out of the system or using it for a little demo
