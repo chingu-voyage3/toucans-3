@@ -68,7 +68,7 @@ header{
 .flex-container a{
   color: rgb(255, 208, 91);
   text-decoration: none;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 
@@ -81,7 +81,6 @@ body{
     background-color: #55c0ec;
     margin:0;
     //align-content: center;
-
 }
 
 .flex-container{
@@ -92,10 +91,45 @@ body{
 .hero-left{
   //flex: 0 1;
   //justify-content: center;
+  text-align: center;
+  flex-basis: 35%;
 }
+.hero-left p{
+  font-size: 2.5rem;
+  color: rgb(244, 255, 255);
+}
+
+.hero-left .cta-button {
+  font-size: 2.5rem;
+  color: rgb(30, 67, 82);
+  background-color: rgb(244, 255, 255);
+  border-radius: 4px;
+  padding: 1.8rem;
+}
+
+.hero-left .cta-button img{
+  width:40px;
+  height:38px;
+  margin-right: 1rem;
+}
+.cta-button:hover img{
+  animation-name: slack;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+  transform: scale(1.5) rotate(18deg);
+}
+
+@keyframes slack{
+0% {transform: scale(1) rotate(0deg)}
+33% {transform: scale(1.2) rotate(6deg)}
+66% {transform: scale(1.4) rotate(12deg) }
+100% {transform: scale(1.5) rotate(18deg)}
+}
+
 
 .hero-left h1{
   font-size: 7rem;
+  color: rgb(30, 67, 82);
 }
 .hero-right{
 
@@ -104,4 +138,59 @@ body{
   //justify-content: center;
   height: 100%;
   align-items: center;
+}
+
+
+/*
+.left-eye {
+  transform: scale(.8);
+  transform-origin: bottom;
+}
+
+.right-eye {
+  transform: scale(.8);
+  transform-origin: bottom;
+} */
+
+
+
+.jurishead{
+  transform: rotate(15deg) scale(.9);
+  transform-origin: bottom;
+  /* transition: 4s; */
+  animation-duration: 12s;
+  animation-name: shrink;
+  animation-iteration-count: infinite;
+  /* animation-direction: alternate;  */
+  animation-timing-function: linear;
+}
+
+.left-eye, .right-eye{
+  transform:  scale(.75);
+  transform-origin: bottom;
+  animation-duration: 12s;
+  animation-name: eyes;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes eyes {
+    0%   {transform:  scale(1);}
+    20%  {transform: scale(0.7);}
+    40%  {transform: scale(1);}
+    60% {transform: rotate(-5deg)}
+    80% {transform: rotate(0deg) }
+    90% {transform: rotate(5deg)}
+    100% {transform: rotate(0deg) }
+}
+
+
+@keyframes shrink {
+    0%   {transform:  scale(1);}
+    20%  {transform: scale(0.8);}
+    40%  {transform: scale(1);}
+    60% {transform: rotate(-5deg)}
+    80% {transform: rotate(0deg) }
+    90% {transform: rotate(5deg)}
+    100% {transform: rotate(0deg) }
 }
