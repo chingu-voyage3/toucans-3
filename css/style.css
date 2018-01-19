@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Signika:300,600');
+
+html {
+    font-size: 62.5%; /* 10px browser default */
+}
+
+/**##Headings##*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family:'Signika', sans-serif;
+	font-weight: 300;
+
+	line-height: 1.2;
+	margin: 0 0 20px;
+}
+
+h1, h2 {
+	font-size: 36px;
+	font-size: 3.6rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+h2:after{
+  content: "";
+  display: block;
+  height: 3px;
+  position: relative;
+  width: 160px;
+  background-color: #55c0ec;
+  margin: 3px auto;
+  bottom: 0px;
+}
+
+h3 {
+	font-size: 24px;
+	font-size: 2.4rem;
+}
+
+h4 {
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+p, p body {
+	font-size: 2rem;
+}
+
+strong{
+  //font-weight: 600;
+}
+
+header{
+    //height:80px;
+    line-height: 1.5;
+    background-color:rgb(64, 89, 107);
+}
+
+.wrapper{
+    width:100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+.flex-container{
+  //display:flex;
+  justify-content:space-evenly;
+  padding:1rem;
+}
+
+.flex-container a{
+  color: rgb(255, 208, 91);
+  text-decoration: none;
+  padding: 2rem;
+}
+
+
+body{
+  font-family: 'Signika', sans-serif;
+  margin:0;
+}
+
+.hero-block{
+    background-color: #55c0ec;
+    margin:0;
+    //align-content: center;
+}
+
+.flex-container{
+    display: flex;
+    align-items: center;
+}
+
+.hero-left{
+  //flex: 0 1;
+  //justify-content: center;
+  text-align: center;
+  flex-basis: 35%;
+}
+.hero-left p{
+  font-size: 2.5rem;
+  color: rgb(244, 255, 255);
+}
+
+.hero-left .cta-button {
+  font-size: 2.5rem;
+  color: rgb(30, 67, 82);
+  background-color: rgb(244, 255, 255);
+  border-radius: 4px;
+  padding: 1.8rem;
+}
+
+.hero-left .cta-button img{
+  width:40px;
+  height:38px;
+  margin-right: 1rem;
+}
+.cta-button:hover img{
+  animation-name: slack;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+  transform: scale(1.5) rotate(18deg);
+}
+
+@keyframes slack{
+0% {transform: scale(1) rotate(0deg)}
+33% {transform: scale(1.2) rotate(6deg)}
+66% {transform: scale(1.4) rotate(12deg) }
+100% {transform: scale(1.5) rotate(18deg)}
+}
+
+
+.hero-left h1{
+  font-size: 7rem;
+  color: rgb(30, 67, 82);
+}
+.hero-right{
+
+  min-width: 300px;
+  flex: 0.15 1 auto;
+  //justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+
+/*
+.left-eye {
+  transform: scale(.8);
+  transform-origin: bottom;
+}
+
+.right-eye {
+  transform: scale(.8);
+  transform-origin: bottom;
+} */
+
+
+
+.jurishead{
+  transform: rotate(15deg) scale(.9);
+  transform-origin: bottom;
+  /* transition: 4s; */
+  animation-duration: 12s;
+  animation-name: shrink;
+  animation-iteration-count: infinite;
+  /* animation-direction: alternate;  */
+  animation-timing-function: linear;
+}
+
+.left-eye, .right-eye{
+  transform:  scale(.75);
+  transform-origin: bottom;
+  animation-duration: 12s;
+  animation-name: eyes;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes eyes {
+    0%   {transform:  scale(1);}
+    20%  {transform: scale(0.7);}
+    40%  {transform: scale(1);}
+    60% {transform: rotate(-5deg)}
+    80% {transform: rotate(0deg) }
+    90% {transform: rotate(5deg)}
+    100% {transform: rotate(0deg) }
+}
+
+
+@keyframes shrink {
+    0%   {transform:  scale(1);}
+    20%  {transform: scale(0.8);}
+    40%  {transform: scale(1);}
+    60% {transform: rotate(-5deg)}
+    80% {transform: rotate(0deg) }
+    90% {transform: rotate(5deg)}
+    100% {transform: rotate(0deg) }
+}
+
+
+h6 {
+  text-align: center;
+  color: white;
+}
+
+footer  {
+  text-align: center;
+  background-color: #40596B;
+  color: white;
+}
+
+
+
+/*
+* === HOW IT WORKS SECTION ===
+*/
+
+#how-to-use {
+  background-color: #92DCAB;
+  padding: 40px;
+}
+
+#how-to-use img {
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 80%;
+}
+
+#how-to-use p {
+  text-align: center;
+}
+
+#how-to-use .block-group {
+  /* align-items: center; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#how-to-use .content-block {
+  background-color: #41596A;
+  border-radius: 5px 5px 0px 0px;
+  display: block;
+  margin: 15px;
+  min-width: 300px;
+  width: 30%;
+}
+
+#how-to-use .block-text {
+  background-color: #FFF;
+  padding: 10px;
+}
+
+.code {
+  font-family: monospace;
+  background-color: #EDEDED;
+  border-radius: 2px;
+  color: #DA1B40;
+  margin: 0;
+  padding: .2rem;
+}
