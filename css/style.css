@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Signika:300,600');
 
 html {
     font-size: 62.5%; /* 10px browser default */
@@ -17,14 +18,24 @@ h6 {
 	margin: 0 0 20px;
 }
 
-h1 {
+h1, h2 {
 	font-size: 36px;
 	font-size: 3.6rem;
 }
 
 h2 {
-	font-size: 30px;
-	font-size: 3rem;
+  text-align: center;
+}
+
+h2:after{
+  content: "";
+  display: block;
+  height: 3px;
+  position: relative;
+  width: 160px;
+  background-color: #55c0ec;
+  margin: 3px auto;
+  bottom: 0px;
 }
 
 h3 {
@@ -193,4 +204,70 @@ body{
     80% {transform: rotate(0deg) }
     90% {transform: rotate(5deg)}
     100% {transform: rotate(0deg) }
+}
+
+
+
+
+h6 {
+  text-align: center;
+  color: white;
+}
+
+footer  {
+  text-align: center;
+  background-color: #40596B;
+  color: white;
+}
+
+
+
+/*
+* === HOW IT WORKS SECTION ===
+*/
+
+#how-to-use {
+  background-color: #92DCAB;
+  padding: 40px;
+}
+
+#how-to-use img {
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 80%;
+}
+
+#how-to-use p {
+  text-align: center;
+}
+
+#how-to-use .block-group {
+  /* align-items: center; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#how-to-use .content-block {
+  background-color: #41596A;
+  border-radius: 5px 5px 0px 0px;
+  display: block;
+  margin: 15px;
+  min-width: 300px;
+  width: 30%;
+}
+
+#how-to-use .block-text {
+  background-color: #FFF;
+  padding: 10px;
+}
+
+.code {
+  font-family: monospace;
+  background-color: #EDEDED;
+  border-radius: 2px;
+  color: #DA1B40;
+  margin: 0;
+  padding: .2rem;
 }
