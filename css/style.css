@@ -24,6 +24,8 @@ h1, h2 {
 }
 
 h2 {
+  letter-spacing: -.1rem;
+  margin-bottom: 3rem !important; /*To be fixed*/
   text-align: center;
 }
 
@@ -49,7 +51,9 @@ h4 {
 }
 
 p, p body {
-	font-size: 2rem;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 0 0 2rem 0;
 }
 
 strong{
@@ -61,6 +65,52 @@ header{
     line-height: 1.5;
     background-color:rgb(64, 89, 107);
 }
+
+/* ===========================================
+   GENERAL - SECTIONS AND CONTAINERS
+   =========================================== */
+section {
+  padding: 1.5rem;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0;
+}
+/* END SECTIONS/CONTAINERS
+   =========================================== */
+
+/* ===========================================
+   GENERAL - FLEX BOX CLASSES
+   =========================================== */
+.flex-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flex-group > * {
+  min-width: 300px;
+  margin: 1.5rem;
+}
+
+.flex-two {
+  flex: 1 0 calc(50% - 5rem);
+}
+
+.flex-three {
+  flex: 1 0 calc(33.33333% - 5rem);
+}
+
+.flex-wide {
+  flex-basis: 100%;
+}
+/* END FLEX BOX
+   =========================================== */
 
 .wrapper{
     width:100%;
@@ -206,61 +256,35 @@ body{
     100% {transform: rotate(0deg) }
 }
 
-
-
-
-h6 {
-  text-align: center;
-  color: white;
-}
-
-footer  {
-  text-align: center;
-  background-color: #40596B;
-  color: white;
-}
-
-
-
-/*
-* === HOW IT WORKS SECTION ===
-*/
-
+/* ===========================================
+   SECTION - HOW IT WORKS
+   =========================================== */
 #how-to-use {
   background-color: #92DCAB;
   padding: 40px;
 }
 
-#how-to-use img {
-  display: block;
-  margin: auto;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  width: 80%;
-}
-
-#how-to-use p {
-  text-align: center;
-}
-
-#how-to-use .block-group {
-  /* align-items: center; */
+.flex-card {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  align-self: stretch;
+  background-color: #40596B;
+  border-radius: 4px;
+  margin-bottom: 3rem;
+  padding: 0;
 }
 
-#how-to-use .content-block {
-  background-color: #41596A;
-  border-radius: 5px 5px 0px 0px;
-  display: block;
-  margin: 15px;
-  min-width: 300px;
-  width: 30%;
+.flex-card img {
+  margin: 7rem 0;
+  width: 224px;
 }
 
-#how-to-use .block-text {
-  background-color: #FFF;
-  padding: 10px;
+.card-desc {
+  background-color: #FAFAFA;
+  padding: 2rem;
+  width: calc(100% - 4rem);
 }
 
 .code {
@@ -271,3 +295,21 @@ footer  {
   margin: 0;
   padding: .2rem;
 }
+/* END HOW IT WORKS
+   =========================================== */
+
+/* ===========================================
+   SECTION - FOOTER
+   =========================================== */
+h6 {
+  text-align: center;
+  color: white;
+}
+
+footer  {
+  text-align: center;
+  background-color: #40596B;
+  color: white;
+}
+/* END FOOTER
+   =========================================== */
