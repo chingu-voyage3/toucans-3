@@ -66,6 +66,27 @@ header{
     background-color:rgb(64, 89, 107);
 }
 
+#button-top {
+  position: fixed;
+  bottom: 1.8rem;
+  right: 1.8rem;
+  z-index: 99;
+  border: none;
+  box-shadow: 1px 1px 2px rgba(0,0,0,.1);
+  outline: none;
+  background-color: #FFD05A;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 0.5rem 0.5rem 0;
+}
+
+#button-top img {
+  width: 3.3rem;
+  margin: 0.2rem;
+}
+
 /* ===========================================
    GENERAL - SECTIONS AND CONTAINERS
    =========================================== */
@@ -259,12 +280,12 @@ body{
 /* ===========================================
    SECTION - HOW IT WORKS
    =========================================== */
-#how-to-use {
+#features {
   background-color: #92DCAB;
   padding: 40px;
 }
 
-.flex-card {
+#features .flex-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -276,12 +297,12 @@ body{
   padding: 0;
 }
 
-.flex-card img {
+#features .flex-card img {
   margin: 7rem 0;
   width: 224px;
 }
 
-.card-desc {
+#features .card-desc {
   background-color: #FAFAFA;
   padding: 2rem;
   width: calc(100% - 4rem);
