@@ -5,16 +5,21 @@
   <meta charset="UTF-8">
   <title>Introducing JurisBot</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="scale.jpg.png">
 </head>
 
 <body>
+  <a data-scroll id="button-top" href="#top">
+    <img src="img/top.svg">
+  </a>
+
   <header>
-    <div class="wrapper">
-      <!--<nav class="primary-nav">-->
+    <div class="wrapper" id="top">
       <nav class="flex-container">
-        <a href="#about">About</a>
-        <a href="#description">Description</a>
-        <a href="#how-to-use">How To Use</a>
+        <a data-scroll href="#hero">Home</a>
+        <a data-scroll href="#about">About</a>
+        <a data-scroll href="#features">Features</a>
+        <a href="#">Add to Slack</a>
       </nav>
     </div>
   </header>
@@ -108,7 +113,7 @@
     </div>
   </section>
 
-  <section id="description">
+  <section id="about">
     <div class="container flex-group">
       <h2 class="flex-wide">What is
         <strong>Juris</strong>Bot</h2>
@@ -132,7 +137,7 @@
     </div>
   </section>
 
-  <section id="how-to-use">
+  <section id="features">
     <div class="container flex-group">
       <h2 class="flex-wide">How It Works</h2>
       <div class="flex-card flex-three">
@@ -158,7 +163,7 @@
     </div>
   </section>
 
-  <section id="about">
+  <section>
     <h2>Start Using JurisBot Today</h2>
     <p>JurisBos allows Slack teams to ask fun legal advice 100% inside Slack, without having to switch between different apps.</p>
     <a href="#" class="cta-button">
@@ -168,13 +173,21 @@
       </span>
     </a>
   </section>
-
-  <footer>
-    <h6>JurisBot was created by the Chingu Voyage-3 Toucans-03 team
-      <br>Source code is available on our Github site
-      <br> The app is not created by, affiliated with, or supported by, Slack Technologies, Inc.
-      <br> This app does not give legal advice - for entertainment purposes only. </h6>
-  </footer>
+  
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made with
+        <span class="emoji" role="img" aria-label="Love">❤️</span> by the Toucans-03 team</p>
+      <p>Source code is available on our
+        <a href="https://chingu-voyage3.github.io/toucans-03/" target="_blank" rel="noopener noreferrer">GitHub page</a>
+      </p>
+      <p>The app is not created by, affiliated with, or supported by Slack Technologies, Inc.</p>
+      <p>The results of app queries are for entertainment purposes only.</p>
+    </div>
+	</footer>
+  
+  <script type="text/javascript" src="js/smooth-scroll.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
