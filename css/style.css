@@ -259,12 +259,12 @@ body{
 /* ===========================================
    SECTION - HOW IT WORKS
    =========================================== */
-#how-to-use {
+#features {
   background-color: #92DCAB;
   padding: 40px;
 }
 
-.flex-card {
+#features .flex-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -276,12 +276,12 @@ body{
   padding: 0;
 }
 
-.flex-card img {
+#features .flex-card img {
   margin: 7rem 0;
   width: 224px;
 }
 
-.card-desc {
+#features .card-desc {
   background-color: #FAFAFA;
   padding: 2rem;
   width: calc(100% - 4rem);
