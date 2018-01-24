@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Signika:300,600');
 
 html {
     font-size: 62.5%; /* 10px browser default */
@@ -17,14 +18,26 @@ h6 {
 	margin: 0 0 20px;
 }
 
-h1 {
+h1, h2 {
 	font-size: 36px;
 	font-size: 3.6rem;
 }
 
 h2 {
-	font-size: 30px;
-	font-size: 3rem;
+  letter-spacing: -.1rem;
+  margin-bottom: 3rem !important; /*To be fixed*/
+  text-align: center;
+}
+
+h2:after{
+  content: "";
+  display: block;
+  height: 3px;
+  position: relative;
+  width: 160px;
+  background-color: #55c0ec;
+  margin: 3px auto;
+  bottom: 0px;
 }
 
 h3 {
@@ -38,7 +51,9 @@ h4 {
 }
 
 p, p body {
-	font-size: 2rem;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 0 0 2rem 0;
 }
 
 strong{
@@ -50,6 +65,73 @@ header{
     line-height: 1.5;
     background-color:rgb(64, 89, 107);
 }
+
+#button-top {
+  position: fixed;
+  bottom: 1.8rem;
+  right: 1.8rem;
+  z-index: 99;
+  border: none;
+  box-shadow: 1px 1px 2px rgba(0,0,0,.1);
+  outline: none;
+  background-color: #FFD05A;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 0.5rem 0.5rem 0;
+}
+
+#button-top img {
+  width: 3.3rem;
+  margin: 0.2rem;
+}
+
+/* ===========================================
+   GENERAL - SECTIONS AND CONTAINERS
+   =========================================== */
+section {
+  padding: 1.5rem;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0;
+}
+/* END SECTIONS/CONTAINERS
+   =========================================== */
+
+/* ===========================================
+   GENERAL - FLEX BOX CLASSES
+   =========================================== */
+.flex-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flex-group > * {
+  min-width: 300px;
+  margin: 1.5rem;
+}
+
+.flex-two {
+  flex: 1 0 calc(50% - 5rem);
+}
+
+.flex-three {
+  flex: 1 0 calc(33.33333% - 5rem);
+}
+
+.flex-wide {
+  flex-basis: 100%;
+}
+/* END FLEX BOX
+   =========================================== */
 
 .wrapper{
     width:100%;
@@ -99,15 +181,25 @@ body{
   color: rgb(244, 255, 255);
 }
 
-.hero-left .cta-button {
+.cta-button {
   font-size: 2.5rem;
   color: rgb(30, 67, 82);
   background-color: rgb(244, 255, 255);
   border-radius: 4px;
+  padding: 1.4rem;
+  line-height:2;
+}
+ .cta-button2 {
+  font-size: 2.5rem;
+  color: rgb(244, 255, 255);
+  background-color:rgb(85, 192, 236);;
+  border-radius: 4px;
   padding: 1.8rem;
+  line-height:2;
 }
 
-.hero-left .cta-button img{
+
+.cta-button img, .cta-button2 img{
   width:40px;
   height:38px;
   margin-right: 1rem;
@@ -117,6 +209,11 @@ body{
     animation-duration: .5s;
     animation-timing-function: linear;
   transform: scale(1.5) rotate(18deg);
+}
+
+.flex-container a:hover{
+  transition-duration: 1s;
+  color: rgb(244, 255, 255);
 }
 
 @keyframes slack{
@@ -146,7 +243,6 @@ body{
   transform: scale(.8);
   transform-origin: bottom;
 }
-
 .right-eye {
   transform: scale(.8);
   transform-origin: bottom;
@@ -194,3 +290,61 @@ body{
     90% {transform: rotate(5deg)}
     100% {transform: rotate(0deg) }
 }
+
+/* ===========================================
+   SECTION - HOW IT WORKS
+   =========================================== */
+#features {
+  background-color: #92DCAB;
+  padding: 40px;
+}
+
+#features .flex-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  align-self: stretch;
+  background-color: #40596B;
+  border-radius: 4px;
+  margin-bottom: 3rem;
+  padding: 0;
+}
+
+#features .flex-card img {
+  margin: 7rem 0;
+  width: 224px;
+}
+
+#features .card-desc {
+  background-color: #FAFAFA;
+  padding: 2rem;
+  width: calc(100% - 4rem);
+}
+
+.code {
+  font-family: monospace;
+  background-color: #EDEDED;
+  border-radius: 2px;
+  color: #DA1B40;
+  margin: 0;
+  padding: .2rem;
+}
+/* END HOW IT WORKS
+   =========================================== */
+
+/* ===========================================
+   SECTION - FOOTER
+   =========================================== */
+h6 {
+  text-align: center;
+  color: white;
+}
+
+footer  {
+  text-align: center;
+  background-color: #40596B;
+  color: white;
+}
+/* END FOOTER
+   =========================================== */
