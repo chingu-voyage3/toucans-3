@@ -341,6 +341,12 @@ h6 {
   color: white;
 }
 
+.flex-container2{
+  display: flex;
+  align-items: center;
+  flex-direction: column;  
+}
+
 footer  {
   text-align: center;
   background-color: #40596B;
