@@ -9,12 +9,8 @@
 </head>
 
 <body>
-  <a data-scroll id="button-top" href="#top">
-    <img src="img/top.svg">
-  </a>
-
-  <header>
-    <div class="wrapper" id="top">
+  <header id="top">
+    <div class="wrapper">
       <nav class="flex-container">
         <a data-scroll href="#hero">Home</a>
         <a data-scroll href="#about">About</a>
@@ -24,14 +20,18 @@
     </div>
   </header>
 
+  <a data-scroll id="button-top" href="#top">
+    <img src="img/top.svg">
+  </a>
+
   <section id="hero" class="hero-block">
     <div class="flex-container">
       <div class="hero-left">
         <h1>
           <strong>Juris</strong>Bot!</h1>
         <p>Get the answers you need to all your legal dilemmas.</p>
-        <a href="https://www.martindale.com/find-attorneys/" class="cta-button">
-          <img src="slack-logo.svg">
+        <a href="#" class="cta-button">
+          <img src="img/slack-logo.svg">
           <span> Ask your
             <strong>question</strong>
           </span>
@@ -141,21 +141,21 @@
     <div class="container flex-group">
       <h2 class="flex-wide">How It Works</h2>
       <div class="flex-card flex-three">
-        <img src="img/HiW_01.svg">
+        <img src="img/briefcase.svg">
         <div class="card-desc">
           <p>You can add JurisBot to your Slack workplace by scrolling down or
             <a href="#">clicking here</a>.</p>
         </div>
       </div>
       <div class="flex-card flex-three">
-        <img src="img/HiW_02.svg">
+        <img src="img/justice-scale.svg">
         <div class="card-desc">
           <p>Your users can get randomized legal advice by typing
             <span class="code">/legal</span> into the chat field.</p>
         </div>
       </div>
       <div class="flex-card flex-three">
-        <img src="img/HiW_03.svg">
+        <img src="img/justice.svg">
         <div class="card-desc">
           <p>Legal advice from JurisBot is only a smile and a handshake away. Legal advice is on its way!</p>
         </div>
@@ -163,15 +163,18 @@
     </div>
   </section>
 
-  <section>
-    <h2>Start Using JurisBot Today</h2>
-    <p>JurisBot allows Slack teams to ask fun legal advice 100% inside Slack, without having to switch between different apps.</p>
-    <a href="#" class="cta-button">
-      <img src="slack-logo.svg">
+  <section id="start-using">
+    <div class="container-small">
+    <h2 class="own-line">Start Using JurisBot Today</h2>
+    <p class="own-line"><strong>Juris</strong>Bot allows Slack teams to de-stress and impress other Slack team members! Let's face it. Working on team projects can be taxing! Take the edge off! Try <strong>Juris</strong>Bot today!</p>
+    <a href="#" class="cta-button2" class="own-line">
+      <img src="img/slack-logo.svg" class="own-line">
       <span> Add to
         <strong>Slack</strong>
       </span>
     </a>
+    <p>... so you don't need to go back and forth with another app.</p>
+  </div>
   </section>
   
   <footer class="site-footer">
