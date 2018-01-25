@@ -57,11 +57,11 @@ p, p body {
 }
 
 strong{
-  //font-weight: 600;
+  font-weight: 600;
 }
 
 header{
-    //height:80px;
+    /* height:80px; */
     line-height: 1.5;
     background-color:rgb(64, 89, 107);
 }
@@ -95,11 +95,18 @@ section {
   display: block;
 }
 
-.container {
+.container, .container-small {
   width: 100%;
   margin: 0 auto;
-  max-width: 1200px;
   padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.container-small {
+  max-width: 550px;
 }
 /* END SECTIONS/CONTAINERS
    =========================================== */
@@ -142,7 +149,7 @@ section {
     font-size: 2rem;
 }
 .flex-container{
-  //display:flex;
+  display:flex;
   justify-content:space-evenly;
   padding:1rem;
 }
@@ -151,6 +158,10 @@ section {
   color: rgb(255, 208, 91);
   text-decoration: none;
   padding: 2rem;
+}
+
+#start-using {
+  text-align: center;
 }
 
 
@@ -162,7 +173,7 @@ body{
 .hero-block{
     background-color: #55c0ec;
     margin:0;
-    //align-content: center;
+    align-content: center;
 }
 
 .flex-container{
@@ -181,15 +192,24 @@ body{
   color: rgb(244, 255, 255);
 }
 
-.hero-left .cta-button {
+.cta-button {
   font-size: 2.5rem;
   color: rgb(30, 67, 82);
   background-color: rgb(244, 255, 255);
   border-radius: 4px;
+  padding: 1.4rem;
+  line-height:2;
+}
+ .cta-button2 {
+  font-size: 2.5rem;
+  color: rgb(244, 255, 255);
+  background-color:rgb(85, 192, 236);;
+  border-radius: 4px;
   padding: 1.8rem;
+  line-height:2;
 }
 
-.hero-left .cta-button img{
+.cta-button img, .cta-button2 img{
   width:40px;
   height:38px;
   margin-right: 1rem;
@@ -201,26 +221,31 @@ body{
   transform: scale(1.5) rotate(18deg);
 }
 
+#top a:hover{
+  transition-duration: 0.4s;
+  color: rgb(244, 255, 255);
+}
+
 @keyframes slack{
-0% {transform: scale(1) rotate(0deg)}
-33% {transform: scale(1.2) rotate(6deg)}
-66% {transform: scale(1.4) rotate(12deg) }
-100% {transform: scale(1.5) rotate(18deg)}
-}
-
-
-.hero-left h1{
-  font-size: 7rem;
-  color: rgb(30, 67, 82);
-}
-.hero-right{
-
-  min-width: 300px;
-  flex: 0.15 1 auto;
-  //justify-content: center;
-  height: 100%;
-  align-items: center;
-}
+  0% {transform: scale(1) rotate(0deg)}
+  33% {transform: scale(1.2) rotate(6deg)}
+  66% {transform: scale(1.4) rotate(12deg) }
+  100% {transform: scale(1.5) rotate(18deg)}
+  }
+  
+  
+  .hero-left h1{
+    font-size: 7rem;
+    color: rgb(30, 67, 82);
+  }
+  .hero-right{
+  
+    min-width: 300px;
+    flex: 0.15 1 auto;
+    //justify-content: center;
+    height: 100%;
+    align-items: center;
+  }
 
 
 /*
@@ -325,6 +350,12 @@ body{
 h6 {
   text-align: center;
   color: white;
+}
+
+.flex-container2{
+  display: flex;
+  align-items: center;
+  flex-direction: column;  
 }
 
 footer  {
