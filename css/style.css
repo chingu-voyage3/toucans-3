@@ -358,10 +358,15 @@ h6 {
   flex-direction: column;  
 }
 
-footer  {
+.site-footer p {
   text-align: center;
-  background-color: #40596B;
-  color: white;
+    margin:auto;
+    padding-bottom: 0rem;
+    padding-top:rem;
+    font-size: 10px;
+     background-color: #40596B;
+  color:white;
+
 }
 /* END FOOTER
    =========================================== */
